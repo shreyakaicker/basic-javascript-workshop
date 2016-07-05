@@ -121,7 +121,7 @@ recursion starts from bottom
 function longestWord(string1) {
     var str = string1.split(" ");
     var longest = 0;
-    var word = null;
+    var word = 0;
     for (var i = 0; i < str.length ; i++) {
         if (longest < str[i].length) {
             longest = str[i].length;
@@ -150,6 +150,21 @@ function capitalise(str) {
 }
 
 capitalise("my name is shreya");
+
+
+
+function largestNum(enterArray) {
+    
+    var highest = 0;
+    for(var i=0; i<enterArray.length; i++) {
+        if(enterArray[i] > highest) {
+            highest = enterArray[i];
+        }
+    }
+    
+    return highest;
+}
+largestNum([10,2000,30,40,66]);
 
 
 
