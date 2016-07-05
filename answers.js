@@ -62,3 +62,19 @@ function enterData(numE,numF,task) {
 }
 
 enterData(6,3,"add");
+
+
+
+
+function string_num(strA,numG) {
+    
+    var ans10 = "";
+    
+    for(i = 0 ; i < numG ; i++ ) {
+         ans10 = ans10 + strA ;
+    
+    }
+    return ans10 ;
+}
+
+string_num("hi",9)
