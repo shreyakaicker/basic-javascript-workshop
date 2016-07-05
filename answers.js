@@ -135,6 +135,25 @@ longestWord("My name is ShreyaKaicker");
 
 
 
+function capitalise(str) {
+    
+    var newArr = str.split(" ");
+    var newArr1 = [];
+    
+    for(i=0; i < newArr.length; i++) {
+     
+        var newWord = newArr[i].charAt(0).toUpperCase() + newArr[i].substring(1).toLowerCase();
+        newArr1.push(newWord);
+    }
+    
+    return newArr1.join(" ");
+}
+
+capitalise("my name is shreya");
+
+
+
+
 
 
 
