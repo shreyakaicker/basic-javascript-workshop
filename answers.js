@@ -8,6 +8,7 @@ stringFirstChar("hello");
 
 
 
+
 //Write a function that takes a string and returns the last character of a string.
 function stringLastChar(sentence1) {
     var stringLength = sentence1.length ;
