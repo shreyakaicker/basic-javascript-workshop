@@ -1,5 +1,6 @@
 // this is a comment
 
+//Write a function that takes a string and returns the first character of the string.
 function stringFirstChar(sentence) {
     return sentence.substring(0,1)
 }
@@ -7,7 +8,7 @@ stringFirstChar("hello");
 
 
 
-
+//Write a function that takes a string and returns the last character of a string.
 function stringLastChar(sentence1) {
     var stringLength = sentence1.length ;
     return sentence1.substring(stringLength,stringLength-1)
@@ -16,7 +17,7 @@ stringLastChar("hello");
 
 
 
-
+//Write a function that takes a string and a number, and returns the character at the position represented by the number. 
 function strAndNum(str1,num1) {
     return str1.charAt(num1);
 }
@@ -24,6 +25,7 @@ strAndNum("hello",2);
 
 
 
+//Write a function that takes two numbers and adds them together.
 function addNumbers(numA,numB) {
     return numA + numB ;
 }
@@ -31,6 +33,8 @@ addNumbers(3,6) ;
 // if we put something other than numbers it gives us a cancatinating string or string and number together
 
 
+
+//Write a function that takes two numbers and multiplies them together.
 function multiply2Num(numC,numD) {
     return numC * numD ;
 
@@ -39,6 +43,15 @@ multiply2Num(2,3)
 // if we put something other than a no. it says NaN (not a number)
 
 
+
+
+/*
+Write a function that takes two numbers and a string. 
+If the string is ‘add’, then return the sum of the numbers. 
+If the string is ‘subtract’, return the difference. 
+If the string is ‘mult’, return the product. 
+If the string is ‘div’, return the ratio. Otherwise return 0.
+*/
 function enterData(numE,numF,task) {
     
     if(task === "add") {
@@ -65,7 +78,7 @@ enterData(6,3,"add");
 
 
 
-
+//Write a function that takes a string and a number, and returns the string repeated that many number of times
 function string_num(strA,numG) {
     
     var ans10 = "";
@@ -82,6 +95,8 @@ string_num("hi",9)
 
 
 
+
+//Write a function that takes a string, and returns the reverse of that string.
 function reverseStr(strB) {
     
     strFinal = "" ;
@@ -96,6 +111,7 @@ reverseStr("shreyakaicker") ;
 
 
 
+//Write a function that takes a number and returns the factorial of a number
 function factorial(n) {
   if (n === 0) {
     return 1;
@@ -118,6 +134,8 @@ recursion starts from bottom
  
  
 
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase
 function longestWord(string1) {
     var str = string1.split(" ");
     var longest = 0;
@@ -135,6 +153,8 @@ longestWord("My name is ShreyaKaicker");
 
 
 
+
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized
 function capitalise(str) {
     
     var newArr = str.split(" ");
@@ -153,6 +173,9 @@ capitalise("my name is shreya");
 
 
 
+
+
+//Write a function that takes an array and returns the largest number of the array
 function largestNum(enterArray) {
     
     var highest = 0;
@@ -169,7 +192,47 @@ largestNum([10,2000,30,40,66]);
 
 
 
+//Write a function that takes an array, and returns a filtered array.
+function oldArr(arr) {
+    
+  var arrNew = arr.filter(Boolean) ;
+  return arrNew ;
+}
+oldArr([7, "ate", "", false, 9, NaN, ""]);
 
 
 
 
+
+//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array
+function sumOfArray(myArray) {
+
+    var total = 0;
+    for (var i = 0; i < myArray.length; i++) {
+        total = total + myArray[i];
+    }
+    return total
+}
+
+sumOfArray([1,2,3,6]) ;
+
+
+
+
+//Write a function that takes two arrays, and returns an array of all elements that are only in one array.
+function diff(arr1,arr2) {
+    var unique = [];
+    for(var i = 0; i < arr1.length; i++){
+        if(arr2.indexOf(arr1[i]) === -1){
+            unique.push(arr1[i]);
+        }
+    }
+     for(var i = 0; i < arr2.length; i++){
+        if(arr1.indexOf(arr2[i]) === -1){
+            unique.push(arr2[i]);
+        }
+    }
+    return unique;
+}
+
+diff([1,2,3,4],[2,3,6,7]);
